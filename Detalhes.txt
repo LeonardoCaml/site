@@ -1,0 +1,5 @@
+- area do cliente
+- suporte
+- informações a mais sobre a empresa
+- cores mais vivas
+- login baseado no cpf e cnpj
