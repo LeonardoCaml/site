@@ -74,11 +74,6 @@ header {
     font-size: 12pt;
     height: 190px;
     width: 360px;
-    transition: 0.3s ease-in-out;
-}
-.card:hover {
-    transition: 0.3s ease-in-out;
-    transform: scale(1.1);
 }
 .card p {
     padding: 5px;
@@ -369,9 +364,6 @@ header {
         justify-content: space-evenly;
         margin: 20px auto;
         gap: 10px;
-    }
-    .card:hover {
-        transform: scale(1);
     }
     .card {
         display: flex;
