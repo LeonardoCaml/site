@@ -15,30 +15,29 @@ function carrossel() {
 
 setInterval(carrossel, 5000);
 
-// const menuItens = document.querySelectorAll('#nav a[href^="#"]');
+const icon = document.querySelector(".menu");
+const icon2 = document.querySelector(".menu2");
 
-// menuItens.forEach(item => {
-//     item.addEventListener('click', easyScroll);
-// });
-
-// function getScrollTopByHref(element) {
-//     const id = element.getAttribute('href');
-//     return document.querySelector(id).offsetTop;
-// }
-
-// function easyScroll(event) {
-//     event.preventDefault();
-//     const to = getScrollTopByHref(event.target);
-
-//     scrollToPosition(to);
-// }
-
-// function scrollToPosition(to) {
-//     window.scroll({
-//         top: to,
-//         behavior: "smooth"
-//     });
-// }
+icon.addEventListener("click", () => {
+    const barra = document.querySelector(".menuBar");
+    
+    if(icon) {
+        barra.style.transform = `translateX(-50vh)`;
+        barra.style.width = `50vh`;
+        icon.classList.add("alter");
+        icon2.classList.remove("alter");
+    }
+});
+icon2.addEventListener("click", () => {
+    const barra = document.querySelector(".menuBar");
+    
+    if(icon2) {
+        barra.style.transform = `translateX(50vh)`;
+        barra.style.width = `0`;
+        icon2.classList.add("alter");
+        icon.classList.remove("alter");
+    }
+});
 
 const debounce = function(func, wait, immediate) {
     let timeout;
