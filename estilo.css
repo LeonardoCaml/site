@@ -326,7 +326,7 @@ header {
         position: relative;
         border-radius: 5px;
         margin-left: 20px;
-        width: 230px;
+        width: 45vw;
         height: 70px;
         background: var(--yellow);
     }
