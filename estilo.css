@@ -502,7 +502,7 @@ header {
     }
     .part-2 h2 {
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1em;
         padding: 20px 0;
         color: var(--yellow);
     }
