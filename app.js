@@ -23,7 +23,7 @@ icon.addEventListener("click", () => {
     
     if(icon) {
         barra.style.transform = `translateX(-50vh)`;
-        barra.style.width = `50vh`;
+        barra.style.width = `50%`;
         icon.classList.add("alter");
         icon2.classList.remove("alter");
     }
