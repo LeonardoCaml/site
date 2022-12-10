@@ -406,12 +406,13 @@ header {
     .card {
         display: flex;
         align-content: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: auto;
         height: 40vh;
         width: 30vw;
     }
     .card p {
+        margin: 10px auto;
         height: 15vh;
         width: 21vw;
         font-weight: 300;
@@ -472,9 +473,10 @@ header {
         font-size: 2em;
     }
     #image_page2 {
-        display: block;
+        display: flex;
+        flex-direction: column;
         align-content: center;
-        justify-content: center;
+        justify-content: space-evenly;
         height: 100vh;
         background-image: linear-gradient(to right, var(--black) 30%, rgba(0, 0, 0, 0)), url(images/page2.jpg);
         background-size: cover;
@@ -517,7 +519,7 @@ header {
     .prosseguir {
         width: 80vw;
         padding-top: 20px;
-        height: 50vh;
+        height: 50%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -547,7 +549,7 @@ header {
     }
     .suporte {
         margin: auto;
-        height: 50vh;
+        height: 50%;
         width: 90vw;
         display: flex;
         flex-direction: column;
