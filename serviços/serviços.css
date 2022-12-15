@@ -4,9 +4,11 @@
     --black: #12120d;
     --yellow: #FFBF09;
 }
-body {
+* {
     margin: 0;
     padding: 0;
+}
+body {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
@@ -14,7 +16,22 @@ a {
     text-decoration: none;
     color: var(--black);
 }
+header {
+    height: 15vh;
+    width: 100%;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    border-radius: 5px;
+    width: 230px;
+    height: 70px;
+    background: var(--yellow);
+}
 .main {
+    margin: 5vh auto;
     display: flex;
 }
 .part-1 {
@@ -72,6 +89,7 @@ a {
 .part-2 h1 {
     color: var(--black);
     font-size: 20pt;
+    margin: 5vh auto;
 }
 .part-2 div {
     width: 70%;
@@ -90,6 +108,21 @@ a {
         flex-direction: column;
         align-items: center;
     }
+    header {
+        padding: 2vh 0;
+        height: 15vh;
+        background: var(--black);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav ul {
+        margin: 10px auto;
+        display: flex;
+        list-style: none;
+        gap: 50px;
+    }
     .part-1 span {
         font-weight: 700;
         font-size: 100pt;
@@ -97,6 +130,9 @@ a {
     .barraSep {
         width: 80%;
         height: 2px;
+    }
+    .part-2 h1 {
+        margin: 5vh auto;
     }
     .part-2 p {
         font-size: 1em;
