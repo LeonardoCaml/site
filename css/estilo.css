@@ -36,7 +36,7 @@ a {
     color: var(--black);
 }
 #logo span{
-    margin-left: 50px;
+    margin-left: 10%;
     width: 300px;
 }
 #nav {
@@ -313,8 +313,6 @@ header {
 @media (max-width: 700px) {
     body {
         height: 100vh;
-    }
-    #logo {
     }
     .carrossel {
         display: flex;
