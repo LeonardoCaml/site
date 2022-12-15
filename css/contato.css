@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
+
+:root {
+    --black: #12120d;
+    --yellow: #FFBF09;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+#faleconosco {
+    background: var(--yellow);
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+header {
+    height: 15vh;
+    width: 100%;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    border-radius: 5px;
+    width: 230px;
+    height: 70px;
+    background: var(--yellow);
+}
+.all {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.mapa {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+    background: var(--black);
+    color: var(--yellow);
+    border-radius: 20px;
+    width: 580px;
+    height: 400px;
+    margin: 20px 0;
+    font-weight: 700;
+}
+iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+}
+.textOne {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.textOne a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.textOne h1 {  
+    line-height: 15px;
+}
+.part {
+    display: flex;
+    flex-direction: column;
+}
+.one {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 35%;
+    gap: 20px;
+}
+.one h1 {
+    font-size: 20pt;
+}
+.one p {
+    text-align: center;
+    padding-top: 30px 0;
+    font-size: 15pt;
+}
+.two a {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    background: var(--black);
+    color: var(--yellow);
+    border-radius: 10px;
+    width: 580px;
+    height: 110px;
+    margin: 20px 0;
+    font-size: 20pt;
+    font-weight: 700;
+}
+.two span {
+    font-size: 35pt;
+    padding: 0 20px;
+}
+a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+    .mapa {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: start;
+        border-radius: 10px;
+        width: 85vw;
+    }
+    .textOne { 
+        margin: 0 20px;
+    }
+    .textOne a > span {
+        font-size: 1.5em;
+        padding: 1px;
+    }
+    .textOne a {
+        padding: 10px 0;
+        gap: 10px;
+    }
+    .one {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        gap: 20px;
+    }
+    .one span {
+        padding: 20px;
+        font-size: 100pt;
+    }
+    .one h1 {
+        font-size: 1.5em;
+    }
+    .one p {
+        padding-top: 30px 0;
+        font-size: 1em;
+    }
+    .two {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        gap: 5px;
+    }
+    .two a {
+        padding: 10px 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 10px;
+        width: 85vw;
+        height: 15vh;
+        margin: 20px 0;
+        font-size: 20pt;
+        font-weight: 700;
+    }
+    .two span {
+        font-size: 35pt;
+        padding: auto 10px;
+    }
+}
