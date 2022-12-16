@@ -93,7 +93,7 @@ header {
 .container {
     border-radius: 10px;
     height: 250px;
-    width: 650px;
+    width: 50vw;
     margin: 50px;
     overflow: hidden;
     transition: transform .5s ease-in-out;
@@ -106,7 +106,7 @@ header {
 }
 #slides img{
     object-fit: cover;
-    width: 650px;
+    width: 50vw;
 }
 .svg {
     display: flex;
@@ -322,9 +322,9 @@ header {
         justify-content: center;
     }
     .container {
-        height: 30vh;
-        width: 100vw;
-        margin: auto;
+        height: 13vh;
+        width: 50vw;
+        margin: 10px auto;
         overflow: hidden;
         transition: transform .5s ease-in-out;
         transform: translateX(0);
@@ -334,7 +334,7 @@ header {
     }
     #slides img{
         object-fit: cover;
-        width: 650px;
+        width: 50vw;
     }
     #nav {
         margin: 80px 0;
@@ -387,42 +387,40 @@ header {
     .cards {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        margin: 10px auto;
-        gap: 10px;
+        margin: 20px auto;
+        gap: 25px;
     }
     .card {
+        text-align: end;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         align-items: center;
         margin: auto;
         height: 16vh;
-        width: 60vw;
+        width: 80vw;
     }
     .card span {
         font-size: 3em;
+        margin: 15px;
     }
     .card p {
-        margin: 5px auto;
-        height: 40px;
-        width: 43vw;
+        height: 30px;
+        width: 50vw;
         font-weight: 300;
         font-size: 0.8em;
     }
     .card h3 {
-        width: 30vw;
+        margin-right: 5px;
+        width: 40vw;
         font-size: 1em;
         font-weight: 600;
     }
     .svg {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .svg span{
-        font-size: 3em;
-        padding: 10px;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
     #tittle {
         font-size: 1em;
