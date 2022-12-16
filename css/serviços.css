@@ -24,12 +24,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-.logo {
-    border-radius: 5px;
-    width: 230px;
-    height: 70px;
-    background: var(--yellow);
-}
 .main {
     margin: 5vh auto;
     display: flex;
