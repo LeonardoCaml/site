@@ -73,6 +73,9 @@ header {
     height: 190px;
     width: 360px;
 }
+.card span {
+    font-size: 3em;
+}
 .card p {
     padding: 5px;
     width: 300px;
@@ -91,7 +94,7 @@ header {
     border-radius: 10px;
     height: 250px;
     width: 650px;
-    margin: 70px;
+    margin: 50px;
     overflow: hidden;
     transition: transform .5s ease-in-out;
     transform: translateX(0);
@@ -175,7 +178,7 @@ header {
 .icon-serv {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 50px;
     margin: 80px 100px;
 }
 #image_page2 {
@@ -383,38 +386,43 @@ header {
     }
     .cards {
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
-        margin: 20px auto;
+        margin: 10px auto;
         gap: 10px;
     }
     .card {
         display: flex;
-        align-content: center;
-        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
         margin: auto;
-        height: 40vh;
-        width: 30vw;
+        height: 16vh;
+        width: 60vw;
+    }
+    .card span {
+        font-size: 3em;
     }
     .card p {
-        margin: 10px auto;
-        height: 15vh;
-        width: 21vw;
+        margin: 5px auto;
+        height: 40px;
+        width: 43vw;
         font-weight: 300;
         font-size: 0.8em;
     }
     .card h3 {
-        width: 25vw;
+        width: 30vw;
         font-size: 1em;
         font-weight: 600;
     }
     .svg {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
     .svg span{
         font-size: 3em;
-        padding: 15px;
+        padding: 10px;
     }
     #tittle {
         font-size: 1em;
