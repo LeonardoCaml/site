@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    background: #F5F5F5;
+}
+
+main {
+    display: flex;
+}
+
+#lateral {
+    background: #1C1B1F;
+    color: #EFEFEF;
+    height: 100vh;
+    width: 300px;
+}
+
+#perfil {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    margin: 20px auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+#perfil-Info {
+    margin: auto 10px;
+}
+
+#perfil-Info h1 {
+    height: 16px;
+    font-size: 14pt;
+}
+
+#perfil-Info p {
+    height: 16px;
+    font-size: 10pt;
+}
+
+#perfil-Img {
+    cursor: pointer;
+    margin: auto 10px;
+    width: 55px;
+    height: 55px;
+    border: 3px solid #EFEFEF;
+    background: #dd6868;
+    border-radius: 50%;
+    background-image: url(../images/account_circle.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+#return {
+    cursor: pointer;
+    margin: 15px;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+#return:hover {
+    text-decoration: underline;
+}
+
+#clientSide {
+    padding: 10px 60px;
+}
+
+#tittleClient {
+    font-size: 35pt;
+}
+
+#tittleProgress {
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #0000004d;
+    background: #fcd5d5;
+    width: 820px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.alter {
+    background-color: black;
+    display: none;
+}
+
+#serviceDeploy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    background: #EFEFEF;
+    border: 2px solid #00000025;
+    border-radius: 15px;
+    height: 160px;
+    width: 250px;
+}
+.services:hover {
+    transform: scale(1.02);
+}
+
+.services span {
+    font-size: 40pt;
+    font-weight: 700;
+}
+
+.services p {
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+#addServices {
+    margin: 15px;
+    width: 50px;
+    cursor: pointer;
+}
