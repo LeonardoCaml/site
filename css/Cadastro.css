@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
+
+:root {
+    --black: #1A140E;
+    --yellow: #FFBF09;
+    --white: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+section {
+    background: #edc2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+#container {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+    width: 550px;
+    height: 1200px;    
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+}
+#login {
+    color: var(--white);
+    padding: 30px;
+    font-weight: 700;
+    font-size: 40px;
+}
+#input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+    height: 1117px;
+}
+.input {
+    padding: 0px 0;
+}
+.input p {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white);
+    padding: 20px;
+}
+.input input {
+    padding: 5px 20px;
+    border: none;
+    width: 450px;
+    height: 40px;
+    background: var(--white);
+    border-radius: 30px;
+}
+.doubleColumn {
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+}
+.doubleColumn input {
+    width: 195px;
+    height: 40px;
+    padding: 5px 20px;
+}
+#buttom {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    height: 70px;
+    width: 360px;
+}
+#buttom a {
+    margin: 0px 0;
+    background: var(--yellow);
+    color: var(--black);
+    width: 168.94px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#checkbox {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 450px;
+    gap: 20px;
+}
+.check {
+    color: var(--white);
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.dropDown {
+    position: absolute;
+    width: 230px;
+    background: var(--white);
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 2px solid grey;
+    height: 150px;
+    overflow: auto;
+    display: none;
+}
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(165, 165, 165);
+    border-radius: 10px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.item:hover {
+    background: #e4e3e3;
+}
