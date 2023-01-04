@@ -11,30 +11,30 @@
 <body>
     <main>
         <section id="fundo">
-            <form id="container">
+            <form id="container" method="post"  action="">
                 <h1 id="login">Cadastro</h1>
                 <div id="input">
                     <div class="input">
                         <p>Nome Completo</p>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" placeholder="digite seu nome completo">
                     </div>
                     <div class="input">
                         <p>Nome da Empresa</p>
-                        <input type="text" name="empresa" id="empresa">
+                        <input type="text" name="empresa" id="empresa" placeholder="digite o nome da sua empresa">
                     </div>
                     <div class="doubleColumn">
                         <div class="input">
                             <p>CNPJ / CPF</p>
-                            <input type="number" name="cpf/cnpj" id="cpf/cnpj">
+                            <input type="number" name="cpf/cnpj" id="cpf/cnpj" placeholder="digite seu cpf/cnpj">
                         </div>
                         <div class="input">
                             <p>Data da Fundação</p>
-                            <input type="date" name="fundação" id="fundação">
+                            <input type="date" name="fundação" id="fundação" placeholder="00/00/0000">
                         </div>
                     </div>
                     <div class="input">
                         <p>Endereço</p>
-                        <input type="text" name="endereço" id="endereço">
+                        <input type="text" name="endereço" id="endereço" placeholder="digite o enderenço da sua empresa">
                     </div>
                     <div class="doubleColumn">
                         <div class="input">
@@ -43,7 +43,7 @@
                         </div>
                         <div class="input">
                             <p>Ramo de Atuação</p>
-                            <input type="text" name="categoria" id="setor" placeholder="ramo de atuação" onfocus="dropdown(0)" onblur="dropdown(1)"/>
+                            <input type="text" name="categoria" id="setor" placeholder="selecione um..." onfocus="dropdown(0)" onblur="dropdown(1)"/>
                             <div class="dropDown">
                                 <div class="listDropDown">
                                     <div class="item" id="item-1" onmousedown="category(1)">Saúde</div>
@@ -65,15 +65,15 @@
                     </div>
                     <div class="input">
                         <p>Email</p>
-                        <input type="text" name="email id="email>
+                        <input type="text" name="email id="email placeholder="digite seu email completo">
                     </div>
                     <div class="input">
                         <p>Senha</p>
-                        <input type="password" name="senha" id="senha">
+                        <input type="password" name="senha" id="senha" placeholder="digite a sua senha">
                     </div>
                     <div class="input">
                         <p>Confirmar Senha</p>
-                        <input type="password" name="senhaConfirm" id="senhaConfirm">
+                        <input type="password" name="senhaConfirm" id="senhaConfirm" placeholder="digite sua senha para confirmar">
                     </div>
                 </div>
                 <div id="checkbox">
@@ -87,9 +87,10 @@
                     </div>
                 </div>
                 <div id="buttom">
-                    <a href="../html/login.html">voltar</a>
-                    <a href="./AreaDoCliente.html">entrar</a>
+                    <a href="../html/login.html" id="voltar">voltar</a>
+                    <a href="./AreaDoCliente.html" id="entrar">entrar</a>
                 </div>
+                
             </form>
         </section>
     </main>
