@@ -7,3 +7,13 @@ function dropdown(p) {
     let d = ["block", "none"];
     e.style.display = d[p];
 }
+
+function finalizarCad(){
+    const entrar = document.getElementById("entrar");
+    
+    entrar.addEventListener("click", () => {
+        alert("cadastro finalizado");
+    });
+}
+
+finalizarCad();
