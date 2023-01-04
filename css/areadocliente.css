@@ -14,6 +14,9 @@ main {
 }
 
 #lateral {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background: #1C1B1F;
     color: #EFEFEF;
     height: 100vh;
@@ -81,7 +84,7 @@ main {
 }
 
 #container {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -93,7 +96,6 @@ main {
 }
 
 .alter {
-    background-color: black;
     display: none;
 }
 
