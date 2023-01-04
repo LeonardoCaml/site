@@ -36,8 +36,8 @@ a {
     display: flex;
     gap: 100px;
 }
-#logo span{
-    margin-left: 10%;
+#logo img{
+    margin: auto 10px;
     width: 300px;
 }
 #nav2 {
@@ -317,6 +317,13 @@ header {
     body {
         height: 100vh;
     }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo img{
+        width: 50vw;
+    }
     .carrossel {
         display: flex;
         justify-content: center;
@@ -357,11 +364,18 @@ header {
         display: block;
         color: var(--yellow);
     }
+    #nav2 {
+        display: none;
+    }
     .menu {
         cursor: pointer;
+        position: absolute;
+        right: 5px;
     }
     .menu2 {
         cursor: pointer;
+        position: absolute;
+        right: 5px;
     }
     .alter {
         display: none;
@@ -381,7 +395,7 @@ header {
         display: flex;
         justify-content: flex-end;
         background: var(--black);
-        height: 85vh;
+        height: 86vh;
         width: 0;
         transition: 0.5s ease-in-out;
     }
