@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/Cadastro.css">
+    <link rel="shortcut icon" href="../images/favicomlogo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section id="fundo">
+            <form id="container">
+                <h1 id="login">Cadastro</h1>
+                <div id="input">
+                    <div class="input">
+                        <p>Nome Completo</p>
+                        <input type="text" name="name" id="name" placeholder="digite seu nome completo">
+                    </div>
+                    <div class="input">
+                        <p>Nome da Empresa</p>
+                        <input type="text" name="empresa" id="empresa" placeholder="digite o nome da sua empresa">
+                    </div>
+                    <div class="doubleColumn">
+                        <div class="input">
+                            <p>CPF</p>
+                            <input type="text" autocomplete="off" maxlength="14"  name="cpf" id="cpf" placeholder="digite seu cpf">
+                        </div>
+                        <div class="input">
+                            <p>CNPJ</p>
+                            <input type="text" autocomplete="off" maxlength="18" name="CNPJ" id="CNPJ" placeholder="digite seu CNPJ">
+                        </div>
+                    </div>
+                    <div class="doubleColumn">
+                        <div class="input">
+                            <p>Data da Fundação</p>
+                            <input type="text" autocomplete="off" maxlength="10" name="fundação" id="fundação" placeholder="00/00/0000">
+                        </div>
+                        <div class="input">
+                            <p>CEP</p>
+                            <input type="text" autocomplete="off" maxlength="9" name="cep" id="cep" placeholder="digite seu CEP">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <p>Endereço</p>
+                        <input type="text" name="endereço" id="endereço" placeholder="digite o enderenço da sua empresa">
+                    </div>
+                    <div class="doubleColumn">
+                        <div class="input">
+                            <p>Cidade</p>
+                            <input type="text" autocomplete="off" maxlength="10" name="cidade" id="cidade" placeholder="Sua cidade">
+                        </div>
+                        <div class="input">
+                            <p>Estado</p>
+                            <input type="text" autocomplete="off" maxlength="9" name="estado" id="estado" placeholder="Seu estado">
+                        </div>
+                    </div>
+                    <div class="doubleColumn">
+                        <div class="input">
+                            <p>Telefone</p>
+                            <input type="text" autocomplete="off" maxlength="15" name="telefone" id="telefone" placeholder="(xx) x xxxx - xxxx">
+                        </div>
+                        <div class="input">
+                            <p>Ramo de Atuação</p>
+                            <input type="text" name="categoria" id="setor" placeholder="selecione um..." onfocus="dropdown(0)" onblur="dropdown(1)"/>
+                            <div class="dropDown">
+                                <div class="listDropDown">
+                                    <div class="item" id="item-1" onmousedown="category(1)">Saúde</div>
+                                    <div class="item" id="item-2" onmousedown="category(2)">Tecnologia</div>
+                                    <div class="item" id="item-3" onmousedown="category(3)">Informática</div>
+                                    <div class="item" id="item-4" onmousedown="category(4)">Industria</div>
+                                    <div class="item" id="item-5" onmousedown="category(5)">Comércio</div>
+                                    <div class="item" id="item-6" onmousedown="category(6)">Mídia e Telecomunicação</div>
+                                    <div class="item" id="item-7" onmousedown="category(7)">Agronegócio</div>
+                                    <div class="item" id="item-8" onmousedown="category(8)">Econômico</div>
+                                    <div class="item" id="item-9" onmousedown="category(9)">Turismo</div>
+                                    <div class="item" id="item-10" onmousedown="category(10)">Alimentício</div>
+                                    <div class="item" id="item-11" onmousedown="category(11)">Farmacêutico</div>
+                                    <div class="item" id="item-12" onmousedown="category(12)">Serviços</div>
+                                    <div class="item" id="item-13" onmousedown="category(13)">outros...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <p>Email</p>
+                        <input type="text" name="email id="email placeholder="digite seu email completo">
+                    </div>
+                    <div class="input">
+                        <p>Senha</p>
+                        <input type="password" name="senha" id="senha" placeholder="digite a sua senha">
+                    </div>
+                    <div class="input">
+                        <p>Confirmar Senha</p>
+                        <input type="password" name="senhaConfirm" id="senhaConfirm" placeholder="digite sua senha para confirmar">
+                    </div>
+                </div>
+                <div id="checkbox">
+                    <div class="check">
+                        <input type="checkbox" name="check1" id="check1">
+                        <p>Concordo com todos os termos de segurança e permissão dos dados fornecidos acima</p>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="check2" id="check2">
+                        <p>Confirmo a veracidade de todas as informações citadas</p>
+                    </div>
+                </div>
+                <div id="buttom">
+                    <button type="submit" id="voltar"><a href="../html/login.html">voltar</a></button>
+                    <button type="submit" id="entrar">entrar</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/cadastro.js"></script>
+</body>
+</html>
