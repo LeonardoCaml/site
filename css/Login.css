@@ -68,7 +68,7 @@ a {
     height: 70px;
     width: 370px;
 }
-#buttom a {
+#buttom button {
     cursor: pointer;
     margin: 20px 0;
     background: var(--yellow);
@@ -84,7 +84,9 @@ a {
     align-items: center;
     text-align: center;
 }
-#buttom a[data-disabled] {
+#buttom button[disabled] {
+    cursor: auto;
+    opacity: .5;
     background: transparent;
     border: 3px solid var(--yellow);
     color: var(--yellow);
