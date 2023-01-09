@@ -16,17 +16,17 @@
                 <div id="input">
                     <div class="input">
                         <p>Email</p>
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" onchange="variableFields()">
                     </div>
                     <div class="input">
                         <p>Senha</p>
-                        <input type="password" name="senha" id="senha">
+                        <input type="password" name="senha" id="senha" onchange="variableFields()">
                     </div>
                     <p id="redefinir"><a href="">esqueceu sua senha?</a></p>
                 </div>
                 <div id="buttom">
-                    <a href="../index.html" id="voltar">voltar</a>
-                    <a href="./AreaDoCliente.html" id="entrar" data-disabled="false">entrar</a>
+                    <button  type="button" onclick="window.location.href = '../index.html'" id="voltar">voltar</button>
+                    <button  type="button" onclick="window.location.href = './AreaDoCliente.html'" id="entrar" disabled="true">entrar</button>
                 </div>
                 <div id="textoCad">
                     <p id="pergunta">Não possui uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
