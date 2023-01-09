@@ -1,15 +1,26 @@
 function variableFields() {
-    const email = document.getElementById("email").value;
-    // verificar validade do email
-    if(!email) {
-        document.getElementById("recover-password").disabled = true;
-    } else if (validateEmail(email)){
-        document.getElementById("recover-password").disabled = false;
-    } else {
-        document.getElementById("recover-password").disabled = true;
-    }
+    const emailValid = isEmailValid();
 
-    function validateEmail(email) {
-        return /\S+@\S+\.\S+/.test(email);
+    const passwordValid =isPasswordValid();
+    document.getElementById("entrar").disabled = !emailValid || !passwordValid;
+}
+
+function isEmailValid() {
+    const email = document.getElementById("email").value;
+    if (!email) {
+        return false;
     }
+    return validateEmail(email);
+}
+
+function isPasswordValid() {
+    const password = document.getElementById("senha").valiue;
+    if (!password) {
+        return false;
+    }
+    return true;
+}
+
+function validateEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
 }
