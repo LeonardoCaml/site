@@ -66,21 +66,28 @@ a {
     display: flex;
     justify-content: space-between;
     height: 70px;
-    width: 360px;
+    width: 370px;
 }
 #buttom a {
+    cursor: pointer;
     margin: 20px 0;
     background: var(--yellow);
     color: var(--black);
-    width: 168.94px;
+    width: 175px;
     height: 50px;
     font-weight: 700;
     font-size: 20px;
     border-radius: 20px;
+    border: 3px solid var(--yellow);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#buttom a[data-disabled] {
+    background: transparent;
+    border: 3px solid var(--yellow);
+    color: var(--yellow);
 }
 #textoCad {
     margin: 20px 0;
@@ -91,11 +98,18 @@ a {
     font-size: 14px;
     line-height: 17px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 #textoCad a {
     color: var(--yellow);
 }
 #textoCad a:hover {
     text-decoration: underline;
+}
+
+#redefinir a {
+    margin: 0 10px;
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--yellow);
 }
