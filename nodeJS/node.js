@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const bodyParser = require("body-parser");
-const db = require("./db");
+const db = require("./db_example");
 
 //criando um bodyParser para recuperar dados do formulário
 app.use(bodyParser.urlencoded({extended: true}));
