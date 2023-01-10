@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const router = express.Router();
 const bodyParser = require("body-parser");
-
+const db = require("./db");
 
 //criando um bodyParser para recuperar dados do formulário
 app.use(bodyParser.urlencoded({extended: true}));
@@ -12,19 +11,16 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'html');
 
 //requerindo o arquivo
-router.get('/',  (req, res) => {
-    res.sendFile(__dirname + "/views/cadastro.html");
+app.get('/',  (req, res) => {
+    res.sendFile(__dirname + "/views/pagina.html");
+});
+app.post('/recebido',  (req, res) => {
+    res.sendFile(__dirname + "/views/recebido.html");
 });
 
-router.get('/areadocliente',  (req, res) => {
-    res.sendFile(__dirname + "/views/AreaDoCliente.html");
-});
 
 //definindo um diretório estático de CSS e JavaScript
 app.use(express.static(path.join(__dirname, 'public')));
-
-
-
 
 
 app.listen(8080, () => {
