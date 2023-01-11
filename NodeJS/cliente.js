@@ -21,3 +21,5 @@ const cliente = database.define('cliente', {
         allowNull: false
     }
 })
+
+//cliente.sync({force: true})
