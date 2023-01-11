@@ -1,7 +1,7 @@
 function variableFields() {
     const emailValid = isEmailValid();
-
     const passwordValid =isPasswordValid();
+
     document.getElementById("entrar").disabled = !emailValid || !passwordValid;
 }
 
