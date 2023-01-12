@@ -8,6 +8,7 @@ class Cliente {
 
 function validate() {
     const buttonLogin = document.getElementById('entrar');
+    const buttonReturn = document.getElementById('voltar');
     const form = document.querySelector('form');
     const email = document.getElementById('email'); 
     const senha = document.getElementById('senha');
@@ -17,12 +18,16 @@ function validate() {
 
     form.addEventListener('submit', (e) => {
 
+        buttonReturn.addEventListener('click', () => {
+            window.location.href = '../index.html';
+        })
+
         if(email.value == '' && senha.value == '') {
             error.textContent = 'insira seus dados nos campos!';
         } else if (emailParams(email.value) === true && passwordParams(senha.value) === true) {
 
             buttonLogin.addEventListener('click', () => {
-                window.location.href = './html/AreaDoCliente.html';
+                window.location.href = './AreaDoCliente.html';
             })
 
             error.textContent = "";
