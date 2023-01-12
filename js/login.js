@@ -7,17 +7,28 @@ class Cliente {
 }
 
 function validate() {
-    const form = document.querySelector('form')
+    const buttonLogin = document.getElementById('entrar');
+    const form = document.querySelector('form');
     const email = document.getElementById('email'); 
     const senha = document.getElementById('senha');
     const error = document.getElementById('error');
     const errorEmail = document.getElementById('errorEmail');
-    const errorPassword = document.getElementById('error');
+    const errorPassword = document.getElementById('errorPassword');
 
     form.addEventListener('submit', (e) => {
 
         if(email.value == '' && senha.value == '') {
             error.textContent = 'insira seus dados nos campos!';
+        } else if (emailParams(email.value) === true && passwordParams(senha.value) === true) {
+
+            buttonLogin.addEventListener('click', () => {
+                window.location.href = './html/AreaDoCliente.html';
+            })
+
+            error.textContent = "";
+            errorEmail.textContent = "";
+            errorPassword.textContent = "";
+
         } else {
             console.log(email.value);
             console.log(senha.value);
@@ -33,13 +44,25 @@ function validate() {
             errorEmail.textContent = '';
         }
     })
+
+    senha.addEventListener('keyup', () => {
+        if(passwordParams(senha.value) !== true) {
+            errorPassword.textContent = "insira uma senha válida com pelo 1 número e um caractere (@, #, $, % ...)"
+        } else {
+            errorPassword.textContent = '';
+        }
+    })
 }
 
 function emailParams(email) {
     let emailPath = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
 
     return emailPath.test(email);
+}
+function passwordParams(password) {
+    let passwordPath = /^(?=.*[0-9])(?=.*[!.@#$%^&*])[a-zA-Z0-9!!.@#$%^&*]{6,30}$/;
 
+    return passwordPath.test(password);
 }
 
 function clientLogin() {
