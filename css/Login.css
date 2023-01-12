@@ -39,7 +39,7 @@ a {
 }
 #login {
     color: var(--white);
-    padding: 30px;
+    padding: 10px;
     font-weight: 700;
     font-size: 40px;
 }
