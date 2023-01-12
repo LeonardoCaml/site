@@ -1,17 +1,12 @@
-class Cliente {
-    constructor(id, email, senha) {
-        this.id = id;
-        this.email = email;
-        this.senha = senha;
-    }
-}
-
 function validate() {
     const buttonLogin = document.getElementById('entrar');
     const buttonReturn = document.getElementById('voltar');
+
     const form = document.querySelector('form');
+
     const email = document.getElementById('email'); 
     const senha = document.getElementById('senha');
+    
     const error = document.getElementById('error');
     const errorEmail = document.getElementById('errorEmail');
     const errorPassword = document.getElementById('errorPassword');
@@ -19,7 +14,7 @@ function validate() {
     form.addEventListener('submit', (e) => {
 
         buttonReturn.addEventListener('click', () => {
-            window.location.href = '../index.html';
+            location.href = '../index.html';
         })
 
         if(email.value == '' && senha.value == '') {
@@ -27,7 +22,7 @@ function validate() {
         } else if (emailParams(email.value) === true && passwordParams(senha.value) === true) {
 
             buttonLogin.addEventListener('click', () => {
-                window.location.href = './AreaDoCliente.html';
+                location.href = './AreaDoCliente.html';
             })
 
             error.textContent = "";
@@ -70,16 +65,5 @@ function passwordParams(password) {
     return passwordPath.test(password);
 }
 
-function clientLogin() {
-
-    const client = new Cliente()
-
-    client.id = 1;
-    client.email = 'leonardocamelo20@gmail.com';
-    client.senha = 'minecraft.it.net';
-
-    return client;
-}
-
-clientLogin();
 validate();
+
