@@ -11,27 +11,34 @@
 <body>
     <main>
         <section id="fundo">
-            <div id="container">
+            <form id="container">
                 <h1 id="login">Login</h1>
+
+                <small id="error"></small>
+
                 <div id="input">
                     <div class="input">
                         <p>Email</p>
-                        <input type="text" name="email" id="email" onchange="variableFields()">
+                        <input type="text" name="email" id="email">
+                        <small id="errorEmail"></small>
                     </div>
                     <div class="input">
                         <p>Senha</p>
-                        <input type="password" name="senha" id="senha" onchange="variableFields()">
+                        <input type="password" name="senha" id="senha">
+                        <small id="errorPassword"></small>
                     </div>
                     <p id="redefinir"><a href="">esqueceu sua senha?</a></p>
                 </div>
                 <div id="buttom">
-                    <button  type="button" onclick="window.location.href = '../index.html'" id="voltar">voltar</button>
-                    <button  type="button" onclick="window.location.href = './AreaDoCliente.html'" id="entrar">entrar</button>
+                    <input  type="submit" onclick="window.location.href = '../index.html'" id="voltar" value="voltar"></input>
+                    <input  type="submit" id="entrar" value="entrar"></input>
                 </div>
                 <div id="textoCad">
                     <p id="pergunta">Não possui uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
                 </div>
-            </div>
+
+                
+            </form>
         </section>
     </main>
 
