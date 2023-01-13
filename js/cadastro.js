@@ -1,6 +1,6 @@
 function category(c) {
     let item = document.getElementById("item-" + c).innerHTML;
-    document.getElementsByTagName("input")[7].value = item;
+    document.getElementsByTagName("input")[10].value = item;
 }
 function dropdown(p) {
     let e = document.getElementsByClassName("dropDown")[0];
@@ -9,10 +9,21 @@ function dropdown(p) {
 }
 
 function finalizarCad() {
-    const entrar = document.getElementById("entrar");
+    const form = document.getElementById("container");
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+    })
 
-    entrar.addEventListener("click", () => {
-        alert("cadastro finalizado");
+    const cadastrar = document.getElementById("cadastrar");
+
+    cadastrar.addEventListener("click", () => {
+        window.location.href = './login.html';
+    });
+
+    const voltar = document.getElementById("voltar");
+
+    voltar.addEventListener("click", () => {
+        window.location.href = './login.html';
     });
 }
 
@@ -73,16 +84,78 @@ function Complements() {
         }
     });
 
-    const cep = document.getElementById("cep")
+    function cepValidate() {
+        const cepInput = document.getElementById("cep");
+        const cityInput = document.getElementById('cidade');
+        const stateInput = document.getElementById('estado');
+        const adressInput = document.getElementById('endereço');
 
-    cep.addEventListener("keypress", () => {
-        let ceplength = cep.value.length;
+        cepInput.addEventListener("keypress", (e) => {
 
-        if (ceplength === 5) {
-            cep.value += "-";
-        }
-    });
+            //formatação do cep na tela do usuário
 
+            let ceplength = cep.value.length;
+
+            if (ceplength === 5) {
+                cepInput.value += "-";
+            }
+
+            //Limitação para números apenas
+
+            const onlyNumbers = /[0-9]/;
+            const key = String(e.key);
+
+            if (!onlyNumbers.test(key)) {
+                e.preventDefault();
+                return;
+            }
+        });
+
+        //formatação do cep para o back-end
+
+        cepInput.addEventListener('keyup', (e) => {
+
+            const inputValue = e.target.value;
+
+            const cepFinaly = inputValue.replace('-', '');
+
+            //checar o tamanho de caracteres
+            if (inputValue.length === 9) {
+                getAddress(cepFinaly);
+            }
+
+        });
+
+        //pegando a API
+
+        const getAddress = async (cep) => {
+
+            const apiUrl = `https://viacep.com.br/ws/${cep}/json/`;
+
+            const response = await fetch(apiUrl);
+
+            const data = await response.json();
+
+            console.log(data);
+            
+            // resetar formulário após erro
+
+            if(data.erro === 'true') {
+                cityInput.reset();
+                stateInput.reset();
+            } else {
+                cityInput.value = data.localidade;
+                stateInput.value = data.uf;
+                adressInput.value = data.logradouro;
+            }
+
+
+        };
+
+
+    }
+
+    cepValidate();
 }
 
 Complements()
