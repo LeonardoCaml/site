@@ -1,5 +1,5 @@
 function category(c) {
-    let item = document.getElementById("item-" + c).innerHTML; 
+    let item = document.getElementById("item-" + c).innerHTML;
     document.getElementsByTagName("input")[7].value = item;
 }
 function dropdown(p) {
@@ -8,9 +8,9 @@ function dropdown(p) {
     e.style.display = d[p];
 }
 
-function finalizarCad(){
+function finalizarCad() {
     const entrar = document.getElementById("entrar");
-    
+
     entrar.addEventListener("click", () => {
         alert("cadastro finalizado");
     });
@@ -18,70 +18,70 @@ function finalizarCad(){
 
 finalizarCad();
 
-function Complements(){
-    
-const cpf = document.getElementById("cpf");
+function Complements() {
 
-cpf.addEventListener("keypress", () => {
-    let cpflength = cpf.value.length;
+    const cpf = document.getElementById("cpf");
 
-    if(cpflength === 3 || cpflength === 7) {
-        cpf.value += ".";
-    } else if (cpflength === 11) {
-        cpf.value += "-";
-    }
-});
+    cpf.addEventListener("keypress", () => {
+        let cpflength = cpf.value.length;
 
-const cnpj = document.getElementById("CNPJ");
+        if (cpflength === 3 || cpflength === 7) {
+            cpf.value += ".";
+        } else if (cpflength === 11) {
+            cpf.value += "-";
+        }
+    });
 
-cnpj.addEventListener("keypress", () => {
-    let cnpjlength = cnpj.value.length;
+    const cnpj = document.getElementById("CNPJ");
 
-    if(cnpjlength === 2 || cnpjlength === 6) {
-        cnpj.value += ".";
-    } else if (cnpjlength === 10) {
-        cnpj.value += "/";
-    } else if (cnpjlength === 15) {
-        cnpj.value += "-";
-    }
-});
+    cnpj.addEventListener("keypress", () => {
+        let cnpjlength = cnpj.value.length;
+
+        if (cnpjlength === 2 || cnpjlength === 6) {
+            cnpj.value += ".";
+        } else if (cnpjlength === 10) {
+            cnpj.value += "/";
+        } else if (cnpjlength === 15) {
+            cnpj.value += "-";
+        }
+    });
 
 
-const data = document.getElementById("fundação");
+    const data = document.getElementById("fundação");
 
-data.addEventListener("keypress", () => {
-    let datalength = data.value.length;
+    data.addEventListener("keypress", () => {
+        let datalength = data.value.length;
 
-    if(datalength === 2 || datalength === 5) {
-        data.value += "/";
-    } else if (datalength === 10) {
-        data.value += "";
-    }
-});
+        if (datalength === 2 || datalength === 5) {
+            data.value += "/";
+        } else if (datalength === 10) {
+            data.value += "";
+        }
+    });
 
-const tel = document.getElementById("telefone")
+    const tel = document.getElementById("telefone")
 
-tel.addEventListener("keypress", () => {
-    let tellength = tel.value.length;
+    tel.addEventListener("keypress", () => {
+        let tellength = tel.value.length;
 
-    if(tellength === 0) {
-        tel.value += "(";
-    } else if (tellength === 3) {
-        tel.value += ") ";
-    } else if (tellength === 10) {
-        tel.value += "-";
-    }
-});
+        if (tellength === 0) {
+            tel.value += "(";
+        } else if (tellength === 3) {
+            tel.value += ") ";
+        } else if (tellength === 10) {
+            tel.value += "-";
+        }
+    });
 
-const cep = document.getElementById("cep")
+    const cep = document.getElementById("cep")
 
-cep.addEventListener("keypress", () => {
-    let ceplength = cep.value.length;
+    cep.addEventListener("keypress", () => {
+        let ceplength = cep.value.length;
 
-    if(ceplength === 5) {
-        cep.value += "-";
-    }
-});
+        if (ceplength === 5) {
+            cep.value += "-";
+        }
+    });
 
 }
 

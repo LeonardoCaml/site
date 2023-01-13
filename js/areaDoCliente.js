@@ -3,10 +3,8 @@ const containter = document.getElementById("container");
 
 function openBar() {
     add.addEventListener("click", () => {
-       containter.style.display = "flex";
+        containter.style.display = "flex";
     });
-    
-    
 }
 
 openBar();
