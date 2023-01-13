@@ -4,9 +4,9 @@ function validate() {
 
     const form = document.querySelector('form');
 
-    const email = document.getElementById('email'); 
+    const email = document.getElementById('email');
     const senha = document.getElementById('senha');
-    
+
     const error = document.getElementById('error');
     const errorEmail = document.getElementById('errorEmail');
     const errorPassword = document.getElementById('errorPassword');
@@ -17,7 +17,7 @@ function validate() {
             location.href = '../index.html';
         })
 
-        if(email.value == '' && senha.value == '') {
+        if (email.value == '' && senha.value == '') {
             error.textContent = 'insira seus dados nos campos!';
         } else if (emailParams(email.value) === true && passwordParams(senha.value) === true) {
 
@@ -29,16 +29,13 @@ function validate() {
             errorEmail.textContent = "";
             errorPassword.textContent = "";
 
-        } else {
-            console.log(email.value);
-            console.log(senha.value);
         }
 
         e.preventDefault();
     })
 
     email.addEventListener('keyup', () => {
-        if(emailParams(email.value) !== true) {
+        if (emailParams(email.value) !== true) {
             errorEmail.textContent = "insira um formato válido (@gmail, @hotmail, @yahoo, ...)"
         } else {
             errorEmail.textContent = '';
@@ -46,7 +43,7 @@ function validate() {
     })
 
     senha.addEventListener('keyup', () => {
-        if(passwordParams(senha.value) !== true) {
+        if (passwordParams(senha.value) !== true) {
             errorPassword.textContent = "insira uma senha válida com pelo 1 número e um caractere (@, #, $, % ...)"
         } else {
             errorPassword.textContent = '';
