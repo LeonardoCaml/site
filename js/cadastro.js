@@ -117,11 +117,9 @@ function Complements() {
 
             const inputValue = e.target.value;
 
-            const cepFinaly = inputValue.replace('-', '');
-
             //checar o tamanho de caracteres
             if (inputValue.length === 9) {
-                getAddress(cepFinaly);
+                getAddress(inputValue);
             }
 
         });
