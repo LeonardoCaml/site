@@ -1,5 +1,6 @@
 const add = document.getElementById("addServices");
 const containter = document.getElementById("container");
+const sair = document.getElementById('return');
 
 function openBar() {
     add.addEventListener("click", () => {
@@ -7,4 +8,11 @@ function openBar() {
     });
 }
 
+function logOut() {
+    sair.addEventListener('click', () => {
+        window.location.href = "./login.html"
+    })
+}
+
+logOut();
 openBar();
