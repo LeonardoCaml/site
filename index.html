@@ -23,7 +23,7 @@
         <div id="logo">
           <img src="./images/logo (1).png" alt="contem.png" />
         </div>
-        <div class="nav-pri">
+        <div class="navPrimary">
           <ul id="nav">
             <li><a href="html/contato.html" target="_blank">contato</a></li>
             <li><a href="#page1">serviços</a></li>
@@ -39,39 +39,35 @@
           </div>
         </div>
       </header>
-      <div class="all">
-        <div class="carrossel">
-          <div class="container">
-            <div id="slides">
-              <img src="images/01.png" alt="" />
-              <img src="images/02.png" alt="" />
-              <img src="images/03.png" alt="" />
-            </div>
+      <div class="carrossel">
+        <div class="container">
+          <div id="slides">
+            <img src="images/01.png" alt="" />
+            <img src="images/02.png" alt="" />
+            <img src="images/03.png" alt="" />
           </div>
         </div>
-        <div class="cards">
-          <div class="card 1">
-            <span class="material-symbols-outlined">balance</span>
-            <div class="svg">
-              <h3>Ética</h3>
-              <p>
-                O valor de fortes práticas éticas é na marca da nossa empresa
-              </p>
-            </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <span class="material-symbols-outlined">balance</span>
+          <div class="simbol">
+            <h3>Ética</h3>
+            <p>O valor de fortes práticas éticas é na marca danossa empresa</p>
           </div>
-          <div class="card 2">
-            <span class="material-symbols-outlined">verified_user</span>
-            <div class="svg">
-              <h3>Credibilidade</h3>
-              <p>Buscar seus reais interesses e atingir grandes resultados</p>
-            </div>
+        </div>
+        <div class="card">
+          <span class="material-symbols-outlined">verified_user</span>
+          <div class="simbol">
+            <h3>Credibilidade</h3>
+            <p>Buscar seus reais interesses e atingir grandesresultados</p>
           </div>
-          <div class="card 3">
-            <span class="material-symbols-outlined">handshake</span>
-            <div class="svg">
-              <h3>Confiança</h3>
-              <p>A honestidade é uma peça fundamental em nosso serviço</p>
-            </div>
+        </div>
+        <div class="card">
+          <span class="material-symbols-outlined">handshake</span>
+          <div class="simbol">
+            <h3>Confiança</h3>
+            <p>A honestidade é uma peça fundamental em nossoserviço</p>
           </div>
         </div>
       </div>
@@ -86,8 +82,8 @@
       </div>
     </section>
     <section class="tela" id="page1">
-      <div class="all-2">
-        <div id="tittle">
+      <div class="servicePage">
+        <div id="services">
           <h1>Serviços</h1>
         </div>
         <div class="icon-serv">
@@ -97,7 +93,7 @@
               <p>contabilidade geral</p>
             </div>
             <a href="html/ContGer.html" target="_blank">
-              <h4>saiba mais</h4>
+              <p>saiba mais</p>
             </a>
           </div>
           <div class="icon">
@@ -106,7 +102,7 @@
               <p>abertura e fechamento de empresa</p>
             </div>
             <a href="html/AberturaEmp.html" target="_blank">
-              <h4>saiba mais</h4>
+              <p>saiba mais</p>
             </a>
           </div>
           <div class="icon">
@@ -115,7 +111,7 @@
               <p>registro de marca</p>
             </div>
             <a href="html/RegMarc.html" target="_blank">
-              <h4>saiba mais</h4>
+              <p>saiba mais</p>
             </a>
           </div>
           <div class="icon">
@@ -124,7 +120,7 @@
               <p>contratos gerais</p>
             </div>
             <a href="html/Contrato.html" target="_blank">
-              <h4>saiba mais</h4>
+              <p>saiba mais</p>
             </a>
           </div>
           <div class="icon">
@@ -133,7 +129,7 @@
               <p>cadastro no spc e serasa</p>
             </div>
             <a href="html/Serasa.html" target="_blank">
-              <h4>saiba mais</h4>
+              <p>saiba mais</p>
             </a>
           </div>
           <div class="icon">
@@ -142,7 +138,7 @@
               <p>criação de código de barra</p>
             </div>
             <a href="html/CodDeBa.html" target="_blank">
-              <h4>saiba mais</h4>
+              <p>saiba mais</p>
             </a>
           </div>
         </div>
@@ -150,7 +146,7 @@
     </section>
     <section class="tela" id="page2">
       <div id="image_page2">
-        <div class="part-1">
+        <div class="textAboutUs">
           <h1>Sobre Nós</h1>
           <h1>Somando confiança multiplicando resultados</h1>
           <p>
@@ -161,7 +157,7 @@
           </p>
         </div>
 
-        <div class="part-2">
+        <div class="letterAnimated">
           <h2 data-anime="left">+ de 200 clientes satisfeitos</h2>
           <h2 data-anime="left">5 empresas abertas com sucesso</h2>
           <h2 data-anime="left">trabalho em equipe</h2>
@@ -171,39 +167,48 @@
     </section>
     <section class="tela" id="page3">
       <div id="form">
-        <form action="">
+        <form action="./php/email.php" method="POST">
           <div>
             <label for="">Nome Completo</label>
-            <input type="text" name="" id="" />
+            <input type="text" name="nome" id="nome" />
           </div>
           <div>
             <label for="">Nome da Empresa</label>
-            <input type="text" name="" id="" />
+            <input type="text" name="empresa" id="empresa" />
           </div>
           <div>
             <label for="">Email</label>
-            <input type="text" name="" id="" />
+            <input type="text" name="email" id="email" />
           </div>
           <div>
             <label for="">Telefone</label>
-            <input type="text" name="" id="" />
+            <input type="text" name="telefone" id="telefone" />
           </div>
           <div>
             <label for="">Mensagem</label>
-            <textarea name="" id="" cols="30" rows="20" placeholder="digite sua mensagem aqui..."></textarea>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="20"
+              placeholder="digite sua mensagem aqui..."
+            ></textarea>
           </div>
         </form>
       </div>
-      <div id="warning">
+      <div id="contactUs">
         <div>
           <h1>Fale Conosco</h1>
-          <p>Envie uma mensagem solicitando um serviço através do nosso formulário de contato, entraremos em contato o mais rápido possível</p>
+          <p>
+            Envie uma mensagem solicitando um serviço através do nosso
+            formulário de contato, entraremos em contato o mais rápido possível
+          </p>
         </div>
       </div>
     </section>
     <section class="tela" id="page4">
       <div class="all-4">
-        <div class="prosseguir">
+        <div class="next">
           <div>
             <h1>Venha realizar seus sonhos</h1>
             <p>
@@ -214,7 +219,7 @@
           </div>
           <a href="html/contato.html" target="_blank">prosseguir</a>
         </div>
-        <div class="suporte">
+        <div class="suport">
           <h1>suporte</h1>
           <a href="#page1">
             <p>Quais os serviços disponíveis?</p>
@@ -283,6 +288,7 @@
                 >email</a
               >
             </li>
+
             <li>
               <a
                 href="https://web.whatsapp.com/send?phone=5577999963095"
@@ -290,6 +296,7 @@
                 >whatsapp</a
               >
             </li>
+
             <li>
               <a
                 href="https://www.instagram.com/contabilidade_contem/?hl=pt-br"
