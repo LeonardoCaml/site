@@ -22,8 +22,8 @@ $arquivo = "
 ";
 
 //Emails para quem será enviado o formulário
-$destino = "edipojoseoliveira@gmail.com";
-$assunto = "Contato pelo Site";
+$destino = "contemwgs@bol.com.br";
+$assunto = "Contatar Serviço";
 
 //Este sempre deverá existir para garantir a exibição correta dos caracteres
 $headers  = "MIME-Version: 1.0\n";
@@ -33,6 +33,6 @@ $headers .= "From: $nome <$email>";
 //Enviar
 mail($destino, $assunto, $arquivo, $headers);
 
-echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+echo "<meta http-equiv='refresh' content='10;URL=../index.html'>";
 
 ?>
