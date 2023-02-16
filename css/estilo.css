@@ -168,13 +168,13 @@ header {
   font-weight: bold;
   width: 120px;
   height: 30px;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 .icon p {
   text-align: center;
   color: var(--black);
   width: 200px;
-  font-size: 10pt;
+  font-size: 0.7em;
   font-weight: 800;
 }
 .icon span {
@@ -225,108 +225,6 @@ header {
 }
 
 #page3 {
-  display: flex;
-}
-
-#form {
-  margin-top: 5vh;
-  width: 55vw;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-}
-
-#form form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#form form div label {
-  margin: 5px 0;
-  font-size: 0.7em;
-}
-
-#form div {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  padding: 20px;
-}
-
-#form div:nth-child(5) {
-  width: 700px;
-}
-
-#form input {
-  margin: 10px 0;
-  padding: 5px;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-#form input:focus {
-  outline: none;
-}
-
-#form textarea {
-  resize: none;
-  padding: 20px;
-  margin: 10px 0;
-  height: 250px;
-  border: none;
-  background: rgb(241, 238, 238);
-  border-radius: 10px;
-  font-size: 0.8em;
-}
-
-#form textarea:focus {
-  outline: none;
-}
-
-#form form div:nth-child(6) {
-  padding: 0;
-  height: 70px;
-  width: 650px;
-}
-
-#form form div input[type='submit']{
-  height: 100px;
-  width: 650px;
-  border: none;
-  border-radius: 5px;
-  background: var(--yellow);
-  font-weight: bold;
-}
-
-#form form div input[type='submit']:hover {
-  transform: scale(1.01);
-}
-
-#contactUs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 45vw;
-  height: 90vh;
-}
-
-#contactUs h1 {
-  font-weight: 700;
-  font-size: 2em;
-}
-
-#contactUs p {
-  width: 600px;
-  height: 300px;
-  font-weight: 400;
-  font-size: 1em;
-  margin: 8vh 0;
-  line-height: 2em;
-  word-spacing: 10px;
-}
-
-#page4 {
   background: #ffffff;
   color: var(--black);
 }
@@ -541,7 +439,7 @@ header {
     height: 30px;
     width: 50vw;
     font-weight: 300;
-    font-size: 0.8em;
+    font-size: .6em;
   }
   .card h3 {
     margin-right: 5px;
@@ -577,10 +475,10 @@ header {
     gap: 10px;
     font-weight: bold;
   }
-  .icon h4 {
+  .icon a > p {
     height: 20px;
     width: 80px;
-    font-size: 8pt;
+    font-size: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -589,7 +487,7 @@ header {
     text-align: center;
     color: var(--black);
     width: 38vw;
-    font-size: 0.7em;
+    font-size: .6em;
   }
   .icon span {
     color: var(--black);
@@ -604,7 +502,7 @@ header {
     padding: 20px 5%;
   }
   #image_page2 h1 {
-    font-size: 1.3em;
+    font-size: 1em;
     margin: auto;
     padding: 20px 0;
     width: 80%;
@@ -612,23 +510,24 @@ header {
     text-transform: uppercase;
   }
   #image_page2 p {
-    font-size: 0.8em;
+    font-size: .6em;
     margin: auto;
     padding: 20px 0;
-    width: 80vw;
+    width: 75vw;
     text-align: center;
+    line-height: 1.2rem;
   }
-  .part-2 {
+  .letterAnimated {
     margin: auto;
     width: 80%;
   }
-  .part-2 h2 {
+  .letterAnimated h2 {
     text-align: center;
-    font-size: 1em;
+    font-size: .8em;
     padding: 20px 0;
     color: var(--yellow);
   }
-  #page4 {
+  #page3 {
     height: 100vh;
   }
   .all-4 {
@@ -636,7 +535,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .prosseguir {
+  .next {
     width: 80vw;
     padding-top: 40px;
     height: 50%;
@@ -646,28 +545,28 @@ header {
     align-items: center;
     text-align: center;
   }
-  .prosseguir a {
+  .next a {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 30px 0;
     padding: 10px;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: bold;
     width: 20vh;
     height: 5vh;
     border-radius: 40px;
     background: var(--yellow);
   }
-  .prosseguir p {
+  .next p {
     width: 60vw;
-    font-size: 0.8em;
+    font-size: 0.6rem;
   }
-  .prosseguir h1 {
-    font-size: 1.2em;
+  .next h1 {
+    font-size: 1rem;
     margin: auto;
   }
-  .suporte {
+  .suport {
     padding-bottom: 30px;
     margin: 10px auto;
     height: 50%;
@@ -676,18 +575,18 @@ header {
     flex-direction: column;
     gap: 10px;
   }
-  .suporte h1 {
+  .suport h1 {
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  .suporte p {
-    font-size: 0.8em;
+  .suport p {
+    font-size: 0.6em;
     width: 90vw;
     margin: auto;
   }
-  .suporte a {
+  .suport a {
     color: var(--black);
   }
   #footer {
@@ -699,10 +598,10 @@ header {
   }
   #footer a {
     color: var(--yellow);
-    font-size: 0.6em;
+    font-size: .6em;
   }
   #footer p {
-    font-size: 1em;
+    font-size: .6em;
     font-weight: bold;
   }
   #footer ul {
