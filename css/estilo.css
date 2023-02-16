@@ -284,6 +284,25 @@ header {
   outline: none;
 }
 
+#form form div:nth-child(6) {
+  padding: 0;
+  height: 70px;
+  width: 650px;
+}
+
+#form form div input[type='submit']{
+  height: 100px;
+  width: 650px;
+  border: none;
+  border-radius: 5px;
+  background: var(--yellow);
+  font-weight: bold;
+}
+
+#form form div input[type='submit']:hover {
+  transform: scale(1.01);
+}
+
 #contactUs {
   display: flex;
   flex-direction: column;
